@@ -6709,7 +6709,7 @@ impl Default for BITMAPFILEHEADER {
 #[repr(C)]
 pub struct BITMAPINFO {
     pub bmiHeader: BITMAPINFOHEADER,
-    pub bmiColors: [RGBQUAD; 1],
+    pub bmiColors: [RGBQUAD; 256],
 }
 impl Copy for BITMAPINFO {}
 impl Clone for BITMAPINFO {
